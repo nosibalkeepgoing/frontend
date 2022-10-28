@@ -8,7 +8,7 @@ spec:
     type: web
     app: frontend
     version: latest
- replicas: 1
+ replicas: 2
  template:
    metadata:
      labels:
