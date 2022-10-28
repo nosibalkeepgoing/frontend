@@ -7,12 +7,14 @@ spec:
    matchLabels:
     type: web
     app: frontend
+    Version: ha
  replicas: 2
  template:
    metadata:
      labels:
        type: web
        app: frontend
+       Version: ha
    spec:
     containers:
     - name: frontend
