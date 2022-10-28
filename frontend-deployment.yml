@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
  name: frontend-deployment
  labels:
-  type: web
+  type: webf
   app: frontend
 spec:
  selector:
    matchLabels:
-    type: web
+    type: webf
     app: frontend
  replicas: 1
  template:
    metadata:
      labels:
-      type: web
+      type: webf
       app: frontend
-      version: v16
+      version: v10
    spec:
     containers:
     - name: frontend
