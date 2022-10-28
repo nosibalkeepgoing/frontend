@@ -7,14 +7,14 @@ spec:
    matchLabels:
     type: web
     app: frontend
-    version: latest
- replicas: 2
+    version: v16
+ replicas: 1
  template:
    metadata:
      labels:
        type: web
        app: frontend
-       version: latest
+       version: v16
    spec:
     containers:
     - name: frontend
