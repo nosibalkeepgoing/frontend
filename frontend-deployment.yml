@@ -2,19 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
  name: frontend-deployment
+ labels:
+  type: web
+  app: frontend
 spec:
  selector:
    matchLabels:
     type: web
     app: frontend
-    version: v16
  replicas: 1
  template:
    metadata:
      labels:
-       type: web
-       app: frontend
-       version: v16
+      type: web
+      app: frontend
+      version: v11
    spec:
     containers:
     - name: frontend
